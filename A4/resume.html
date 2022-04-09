@@ -1,0 +1,142 @@
+<!doctype html>
+<html aria-setsize="1000">
+<link rel="stylesheet" href="sdstyle.css">
+
+<head>
+	<title> My Resume </title>
+
+</head>
+
+<body>
+	<img src='https://blackbeltmag.com/media-library/tricking-gainer-flash-kick.jpg?id=23576983&width=1245&quality=85&coordinates=0%2C19%2C0%2C103&height=700'
+		style="width:100%;height:700px;" alt='Person Doing Flash kick Flip'>
+	<h1> Shawn de Jesus </h1>
+	<div id="info-bar">
+		<ul class="info">
+			<li><a href=''>
+					<address> 170 E Desperado Rd Scottsdale, Arizona, 85255</address>
+				</a></li>
+			<li><a href=''>480-678-4579</a></li>
+			<li><a href=''>sdejesu2@asu.edu</a></li>
+		</ul>
+	</div>
+
+
+
+
+	<button class="accordion">
+		<h2> Objective </h2>
+	</button>
+
+	<div class="panel">
+		<p>
+			Science student interested in software development and cyber security. I have experience in coding
+			challenges
+			and an internship working on web services. I am currently seeking an internship in the software industry.
+		</p>
+	</div>
+
+	<button class="accordion">
+		<h2> Education </h2>
+	</button>
+	<div class="panel">
+		<table style='border: 1px solid rgb(84, 165, 219);border-collapse: collapse'>
+
+			<thead>
+				<tr>
+					<th>Degree/Diploma</th>
+					<th>School</th>
+					<th>Year</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>High school diploma&nbsp;</td>
+					<td>Pinnacle High school&nbsp;</td>
+					<td>2018&nbsp;</td>
+				</tr>
+				<tr>
+					<td>B.S. Computer Science (Software Engineering)&nbsp;</td>
+					<td>Arizona State University&nbsp;</td>
+					<td>2022&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<button class="accordion">
+		<h2> Experience </h2>
+	</button>
+	<div class="panel">
+		<ol>
+			<li>
+				<strong> Charles Schwab internship:</strong>
+				<ul>
+					<li>Used C# and SQL inorder to add features on company web services. </li>
+					<li>Utilized the Agile methodology in order to complete additional features.</li>
+				</ul>
+			</li>
+			<li>
+				<strong> Engineering Futures Tech Robotics Bootcamp (ASU) Summer 2019:</strong>
+				<ul>
+					<li>Received an award for best robot design out of 15 teams by the event judges.</li>
+					<li>Debugged Energia code for TI-RSLK robot to make it follow a black line utilizing light sensors
+					</li>
+					<li>Constructed a TI-RSLK robot by soldering and connecting wires to the motorboard and launchpad
+						plastic casing</li>
+					<li>
+						Managed a team of engineers by assisting the build process and presentation of the robot while
+						keeping tabs on time
+						management in order to complete the project by the presentation date
+					</li>
+				</ul>
+			</li>
+
+			<li>
+
+				<strong> Spyn Project (ASU): </strong>
+				<ul>
+					<li>Exceeded in the task by completing the maze with the fastest time being a minute ahead of the
+						other
+						teams and achieved the highest grade of 108%</li>
+					<li>Developed MATLAB code that utilized input from touch and ultrasonic sensors to guide the robot
+						in
+						order to maneuver through the maze</li>
+					<li>Lead a team of four engineers to design and program an autonomous robot </li>
+				</ul>
+
+			</li>
+		</ol>
+	</div>
+	<button class="accordion">
+		<h2> References </h2>
+	</button>
+	<div class="panel">
+		<ul>
+			<li>Tirupalavanam Ganesh: tganesh@asu.edu</li>
+			<li>Frank Seaburg: Frank.Seaburg@schwab.com</li>
+		</ul>
+	</div>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				/* Toggle between adding and removing the "active" class,
+				to highlight the button that controls the panel */
+				this.classList.toggle("active");
+
+				/* Toggle between hiding and showing the active panel */
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+</body>
+
+</html>
